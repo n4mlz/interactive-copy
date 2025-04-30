@@ -1,5 +1,15 @@
+import pyperclip
+
+
 def main():
-    print("Hello, World!")
+    while True:
+        s = input("> ")
+        pyperclip.copy(s)
+
+        if s.lower() == "exit":
+            break
+
+        print(f"Copied to clipboard: {s}")
 
 
 if __name__ == "__main__":
